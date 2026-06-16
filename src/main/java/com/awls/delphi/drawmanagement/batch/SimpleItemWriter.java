@@ -6,7 +6,7 @@ import org.springframework.batch.item.ItemWriter;
 public class SimpleItemWriter implements ItemWriter<String> {
     @Override
     public void write(Chunk<? extends String> items) {
-        items.forEach(System.out::println); // Print items to console
+        items.forEach(System.out::println);
     }
 }
 

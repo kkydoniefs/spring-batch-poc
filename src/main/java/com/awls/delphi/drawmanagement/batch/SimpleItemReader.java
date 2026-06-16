@@ -11,7 +11,7 @@ public class SimpleItemReader implements ItemReader<String> {
         if (index < data.length) {
             return data[index++];
         }
-        return null; // End of data
+        return null;
     }
 }
 

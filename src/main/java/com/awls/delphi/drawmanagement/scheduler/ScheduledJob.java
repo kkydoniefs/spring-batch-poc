@@ -18,7 +18,7 @@ public class ScheduledJob {
         this.job = job;
     }
 
-    @Scheduled(cron = "0 0 * * * ?") // Runs every hour
+    @Scheduled(cron = "0 0 * * * ?")
     public void runJob() throws Exception {
         JobParameters jobParameters = new JobParametersBuilder()
                 .addLong("time", System.currentTimeMillis())

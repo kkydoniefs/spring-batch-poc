@@ -19,7 +19,7 @@ public class JobRunner {
 
     public void runJob() throws Exception {
         JobParameters jobParameters = new JobParametersBuilder()
-                .addLong("time", System.currentTimeMillis()) // Unique parameter for restartability
+                .addLong("time", System.currentTimeMillis())
                 .toJobParameters();
 
         jobLauncher.run(job, jobParameters);
